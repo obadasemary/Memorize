@@ -8,14 +8,9 @@
 
 import SwiftUI
 
-//func createCardContent(pairIndex: Int) -> String {
-//
-//    return "😂"
-//}
+class EmojiMemoryGame: ObservableObject {
 
-class EmojiMemoryGame {
-
-    private(set) var model: MemoryGame<String> = createMemoryGame()
+    @Published private(set) var model: MemoryGame<String> = createMemoryGame()
 
     static func createMemoryGame() -> MemoryGame<String> {
 
