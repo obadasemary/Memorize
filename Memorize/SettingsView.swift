@@ -44,7 +44,7 @@ struct SettingsView: View {
                     Alert(title: Text("Thanks!"), message: Text("\(email)"))
                 }
             }
-            .navigationBarTitle("Settings")
+            .navigationBarTitle(LocalizedStringKey(StringsEnum.settings))
         }
     }
 }

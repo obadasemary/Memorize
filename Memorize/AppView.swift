@@ -14,16 +14,18 @@ struct AppView: View {
 
     var body: some View {
         TabView {
+            MoviesView()
+                .tabItem {
+                    Text(LocalizedStringKey(StringsEnum.movies))
+            }
             EmojiMemoryGameView(viewModel: game)
                 .tabItem {
-//                    Image(systemName: <#T##String#>)
-                    Text("Emoji Game")
+                    Text(LocalizedStringKey(StringsEnum.emoji))
             }
             SettingsView()
                 .tabItem {
-//                    Image(systemName: "list.dash")
-                    Text("Settings")
-                }
+                    Text(LocalizedStringKey(StringsEnum.settings))
+            }
         }
     }
 }
